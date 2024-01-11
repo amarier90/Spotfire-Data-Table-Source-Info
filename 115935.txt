@@ -1,0 +1,400 @@
+1. Information Link
+    Path: /Data Sources/Public Data Sources/Inventory/INVENTORY_TRANSACTIONS_WO_LOT
+    Id: 51c3937d-57fd-4510-bd29-4c707ca4baab
+    On-demand settings
+        Procedure INVENTORY_TRANSACTIONS_WO_LOT, parameter FROM_DATE (YYYY-MM-DD) defined by
+            Document property: StartDate
+        Procedure INVENTORY_TRANSACTIONS_WO_LOT, parameter TO_DATE (YYYY-MM-DD) defined by
+            Document property: EndDate
+        Update behavior: Manual
+        Caching allowed: No
+    Data loaded at: 1/11/2024 9:26 AM
+2. Select Data > Add data...
+    Source: Data table from current analysis
+    Data table: COST_ITEM_LIST_P1
+    Update behavior: Automatic
+    Data loaded at: 1/11/2024 9:26 AM
+    Data was added as new columns in data table 'INVENTORY_TRANSACTIONS_WO_LOT'
+    Matching behavior: Tries to match the specified columns when data is loaded
+    Matched columns:
+        ITEM_NUMBER – ITEM_NUMBER
+        LOCATION_CODE – COST_LOCATION_CODE
+    Added columns:
+        TOTAL_COST_AMT
+        BASE_CURRENCY_CODE
+    Ignored columns:
+        COST_LOCATION_NAME
+        COST_ASSOC_FROM_LOC_CODE
+        COST_ASSOC_FROM_LOC_NAME
+        ITEM_NAME
+        PRIMARY_UOM_CODE
+        ITEM_TYPE_CODE
+        INVNTRY_CTGRY_CLASS_CODE
+        INVNTRY_CTGRY_CLASS_DESC
+        COST_CALENDAR_CODE
+        COST_PERIOD_CODE
+        COST_PERIOD_START_DATE
+        COST_FROZEN
+        COST_METHOD_CODE
+        VARIABLE_COST_AMT
+        MFG_FIXED_OVHD_AMT
+        AGRI_FIXED_OVHD_AMT
+        FREIGHT_AMT
+        STORAGE_AMT
+        PURCHASE_FREIGHT_AMT
+        COPY_COST_SOURCE
+    Join method: Left outer join
+    Treat empty values as equal: No
+3. Select Data > Add data...
+    Source: Data table from current analysis
+    Data table: LOCATION
+    Update behavior: Automatic
+    Data loaded at: 1/11/2024 9:26 AM
+    Data was added as new columns in data table 'INVENTORY_TRANSACTIONS_WO_LOT'
+    Matching behavior: Tries to match the specified columns when data is loaded
+    Matched columns: LOCATION_CODE – LOCATION_CODE
+    Added columns: ACCOUNT_UNIT
+    Ignored columns:
+        LOCATION_NAME
+        FACILITY_CODE
+        FACILITY_NAME
+        ITEM_MASTER_ORGANIZATION
+        ORGANIZATION_TYPE
+        ORGANIZATION_ID
+        LOCATION_ATTRIBUTE_CATEGORY
+        EXCL_FROM_ACTUAL_COST_FLAG
+        EXTERNAL_OR_INTERNAL_ACCESS
+        COI_REVERSE_GL_ORG_FLAG
+        ORGANIZATION_CLASS
+        EDI_SNAPSHOT_HRS_BEHIND_EASTRN
+        DETAILED_947_LOT_HANDLING_FLAG
+        CPG_ROLLFWD_TO_DLX_SNPST_FLAG
+        LIQUIDATION_LOT_HANDLING_FLAG
+        FEAST_INV_ORG_FLAG
+        PO_PRINT_FORMAT
+        DAMAGE_LOT_HANDLING_FLAG
+        USE_947_LOT_NO_FLAG
+        ASSOCIATED_PLANT_CODE_WMS
+        DLX_LINE_STAGE_LOOKUP
+        STOCKNO
+        LOCATION_NAME_ORDER_MGT
+        RECEIVING_LEAD_TIME
+        STANDARD_LEAD_TIME
+        ORGANIZATION_UNIT_ORDER_MGT
+        FACILITY_CODE_ORDER_MGT
+        INTERNAL_LEAD_TIME_SHIPMENT
+        TRANSPORTATION_PLANNING_SYSTEM
+        COST_ASSOCIATION_ORDER_MGT
+        ORDER_MGT_LOC_CONFIGURATION
+        EARLY_RELEASE_TO_WHSE_FLAG
+        RESERVE_ON_HAND_LAST_FLAG
+        NIGHT_RSV_EXCL_NEG_ONHAND_FLAG
+        ADJUST_AVAL_BY_LEAD_TIME_FLAG
+        EXCL_601_STATUS_AS_AVAL_FLAG
+        LOCATION_TYPE_ORDER_MGT
+        CHEP_ID
+        MINIMUM_TRUCK_WEIGHT
+        TAX_LEGAL_ENTITY
+        ON_HAND_POST_DATE
+        ADD_1_DAY_TO_MHLD_BUFFER_FLAG
+        OVERFLOW_FOR_LOCATION_CODE
+        PLAN_LOCATION_TYPE
+        COMFG_LOCATION_FLAG
+        CAPACITATED_PUSH_LOCATION_FLAG
+        DEFAULT_PROD_TIME_FENCE
+        USE_PUSH_LOGIC_FLAG
+        RECEIVE_ON_MHLD_FLAG
+        AUTOSCHEDULE_INTERMEDIATE_FLAG
+        SHIP_ON_MHLD_FLAG
+        REC_SHIPMENTS_USE_OHNAND_FLAG
+        SURGE_FOR_LOCATION_CODE
+        LAST_PPS_PRODUCTION_DATE
+        MPS_REPORTING_GROUP
+        OPM_REQUEST_LOC_SWITCH_FLAG
+        PPS_DEDUCTION_FLAG
+        COST_METHOD
+        CALENDAR_CODE
+        TRANSFER_TO_GL_FLAG
+        ALLOW_NEGATIVE_BALANCES_FLAG
+        LOCATOR_CONTROL
+        QA_SKIPPING_INSP_FLAG
+        AUTO_SERIAL_ALPHA_PREFIX
+        START_AUTO_SERIAL_NUMBER
+        AUTO_LOT_ALPHA_PREFIX
+        LOT_NUMBER_UNIQUENESS
+        LOT_NUMBER_GENERATION
+        LOT_NUMBER_LENGTH
+        STARTING_REVISION
+    Join method: Left outer join
+    Treat empty values as equal: No
+4. Select Data > Add data...
+    Source: Data table from current analysis
+    Data table: COST_ITEM_LIST_P2
+    Update behavior: Automatic
+    Data loaded at: 1/11/2024 9:26 AM
+    Data was added as new columns in data table 'INVENTORY_TRANSACTIONS_WO_LOT'
+    Matching behavior: Tries to match the specified columns when data is loaded
+    Matched columns:
+        ITEM_NUMBER – ITEM_NUMBER
+        LOCATION_CODE – COST_LOCATION_CODE
+    Added columns:
+        ITEM_NAME
+        TOTAL_COST_AMT
+        BASE_CURRENCY_CODE
+    Ignored columns:
+        COST_LOCATION_NAME
+        COST_ASSOC_FROM_LOC_CODE
+        COST_ASSOC_FROM_LOC_NAME
+        PRIMARY_UOM_CODE
+        ITEM_TYPE_CODE
+        INVNTRY_CTGRY_CLASS_CODE
+        INVNTRY_CTGRY_CLASS_DESC
+        COST_CALENDAR_CODE
+        COST_PERIOD_CODE
+        COST_PERIOD_START_DATE
+        COST_FROZEN
+        COST_METHOD_CODE
+        VARIABLE_COST_AMT
+        MFG_FIXED_OVHD_AMT
+        AGRI_FIXED_OVHD_AMT
+        FREIGHT_AMT
+        STORAGE_AMT
+        PURCHASE_FREIGHT_AMT
+        COPY_COST_SOURCE
+    Join method: Left outer join
+    Treat empty values as equal: No
+5. Select Data > Transform data...
+    Added transformations
+        Transformation name: Change column names
+        Columns to rename: TOTAL_COST_AMT
+        Expression: Total Cost Period 1 with Null
+
+        Transformation name: Change column names
+        Columns to rename: TOTAL_COST_AMT (2)
+        Expression: Total Cost Period 2 with Null
+
+6. Data > Add calculated column...
+    Column name: UPDATED_REASON_CODE
+    Expression: If([TRANSACTION_CATEGORY]="MISC",[REASON_CODE],If([TRANSACTION_CATEGORY]="MOVE","MOVE",If([TRANSACTION_CATEGORY]="RECEIPT","PORC",If([TRANSACTION_SUBCATEGORY]="BATCH_PRODUCTION","PROD",If([TRANSACTION_SUBCATEGORY]="BATCH_USAGE","USGE",[TRANSACTION_SUBCATEGORY])))))
+7. Data > Add calculated column...
+    Column name: 115935 Impact from Transactions
+    Expression: [115935 Primary Quantity] * (-[Total Cost Period 2 with Null])
+8. Data > Add calculated column...
+    Column name: GL Operation
+    Expression: Mid([ACCOUNT_UNIT],7,3)
+9. Data > Add calculated column...
+    Column name: Max Creation Date by Reason Code
+    Expression: If(([UPDATED_REASON_CODE]="IBAL") and ([LOCATION_CODE]=[SUBINVENTORY_CODE]) and (Day([TRANSACTION_DATE])=Day([CREATION_DATE])),Max([CREATION_DATE]) Over ([UPDATED_REASON_CODE],[SUBINVENTORY_CODE]),Null)
+10. Data > Add calculated column...
+    Column name: Max IBAL
+    Expression: Max([Max Creation Date by Reason Code])
+11. Data > Add calculated column...
+    Column name: 1st Day Max Creation Date
+    Expression: If(([UPDATED_REASON_CODE]="IBAL") and ([LOCATION_CODE]=[SUBINVENTORY_CODE]) and (Day([TRANSACTION_DATE])=1),Max([CREATION_DATE]) Over ([UPDATED_REASON_CODE],[SUBINVENTORY_CODE],[TRANSACTION_DATE]),Null)
+12. Data > Add calculated column...
+    Column name: 1st Day Max IBAL
+    Expression: Max([1st Day Max Creation Date])
+13. Data > Add calculated column...
+    Column name: Prior Month 115935 Quantity
+    Expression: If((([UPDATED_REASON_CODE]="IBAL") or ([UPDATED_REASON_CODE]="HJ0507") or ([UPDATED_REASON_CODE]="HJ0120")) and ([TRANSACTION_DATE]<=[1st Day Max IBAL]),[115935 Primary Quantity],0)
+14. Data > Add calculated column...
+    Column name: Cost Difference
+    Expression: [Total Cost Period 2] - [Total Cost Period 1]
+15. Data > Add calculated column...
+    Column name: Estimated Reval from Prior Month
+    Expression: [Cost Difference] * [Prior Month 115935 Quantity]
+16. Data > Add calculated column...
+    Column name: 115935 Primary Quantity
+    Expression: If(([UPDATED_REASON_CODE]="HJ0120") or ([UPDATED_REASON_CODE]="HJ0507") or ([UPDATED_REASON_CODE]="IBAL"),[PRIMARY_QUANTITY],0)
+17. Data > Add calculated column...
+    Column name: 115935 End Balance Amount Support
+    Expression: If(([TRANSACTION_DATE]>=[Max IBAL]) and ([UPDATED_REASON_CODE]="HJ0507"),[115935 Impact from Transactions],0)
+18. Data > Add calculated column...
+    Column name: 115935 End Balance Qty Support
+    Expression: If(([TRANSACTION_DATE]>=[Max IBAL]) and ([UPDATED_REASON_CODE]="HJ0507"),[115935 Primary Quantity],0)
+19. Data > Add calculated column...
+    Column name: 115935 End Balance by GL Operation
+    Expression: Sum([115935 End Balance Amount Support]) Over ([GL Operation])
+20. Data > Add calculated column...
+    Column name: 115935 Reval by GL Operation
+    Expression: Sum([Estimated Reval from Prior Month]) Over ([GL Operation])
+21. Data > Add calculated column...
+    Column name: Total Cost Period 1
+    Expression: If([Total Cost Period 1 with Null] is Null,0,[Total Cost Period 1 with Null])
+22. Data > Add calculated column...
+    Column name: Total Cost Period 2
+    Expression: If([Total Cost Period 2 with Null] is Null,0,[Total Cost Period 2 with Null])
+23. Data > Add calculated column...
+    Column name: Middle Month Qty
+    Expression: If(([115935 Primary Quantity]!=0) and ([115935 End Balance Qty Support]=0) and ([Prior Month 115935 Quantity]=0),[115935 Primary Quantity],0)
+24. Data > Add calculated column...
+    Column name: Middle Month Amount
+    Expression: [Middle Month Qty] * [Total Cost Period 2]
+25. Data > Add calculated column...
+    Column name: Middle Month Amount by GL Operation
+    Expression: Sum([Middle Month Amount]) Over ([GL Operation])
+26. Data > Add calculated column...
+    Column name: Middle Month Amount by Location & Item
+    Expression: Sum([Middle Month Amount]) Over ([LOCATION_CODE],[ITEM_NUMBER])
+27. Data > Data table properties > Relations
+    Added relation: [GL_TRIAL_BALANCE].[GL_OPERATION_CODE] – [INVENTORY_TRANSACTIONS_WO_LOT].[GL Operation]
+1. Information Link
+    Path: /Data Sources/Public Data Sources/Costs/COST_ITEM_LIST
+    Id: be10f905-a48c-4ded-8dd4-f7d320ec0ee9
+    On-demand settings
+        Procedure COST_ITEM_LIST, parameter COST_MONTH_START_DATE (yyyy-mm-dd) defined by
+            Document property: P1CostDate
+        Update behavior: Manual
+        Caching allowed: No
+    Data loaded at: 1/11/2024 9:22 AM
+1. Select Data > Add data...
+    Type: Information Link
+    Path: /3 Information Links/Enterprise Information Links/Location/LOCATION
+    Id: 1ba20c4c-eb8c-49f9-8aa7-789c901785fb
+    Data loaded at: 1/11/2024 9:21 AM
+1. Information Link
+    Path: /Data Sources/Public Data Sources/Finance/GL_TRIAL_BALANCE
+    Id: 5b1846ec-e0fa-4ec1-bcf5-3be1563292b9
+    On-demand settings
+        Procedure GL_TRIAL_BALANCE, parameter IN_PERIOD_NAME (MON-FY-YY) defined by
+            Document property: GLPeriod
+        Procedure GL_TRIAL_BALANCE, parameter IN_LEDGER_NAME (e.g. JMS- Domestic) defined by
+            Expression: "JMS- Domestic"
+            Limited by active filtering scheme: No
+            Limited by: (None)
+        Update behavior: Manual
+        Caching allowed: No
+    Data loaded at: 1/11/2024 9:26 AM
+2. Select Data > Add data...
+    Source: Data table from current analysis
+    Data table: GL_TRIAL_BALANCE_CANADA
+    Update behavior: Automatic
+    Data loaded at: 1/11/2024 9:26 AM
+    Data was added as new rows in data table 'GL_TRIAL_BALANCE'
+    Matching behavior: Tries to match the specified columns when data is loaded
+    Matched columns:
+        LEDGER_NAME – LEDGER_NAME
+        PERIOD_NAME – PERIOD_NAME
+        PERIOD_NUMBER – PERIOD_NUMBER
+        PERIOD_YEAR – PERIOD_YEAR
+        BEGIN_CR – BEGIN_CR
+        BEGIN_DR – BEGIN_DR
+        BEGIN_BALANCE – BEGIN_BALANCE
+        END_BALANCE – END_BALANCE
+        NET_ACTIVITY – NET_ACTIVITY
+        PERIOD_CR – PERIOD_CR
+        PERIOD_DR – PERIOD_DR
+        CURRENCY_CODE – CURRENCY_CODE
+        GL_COMPANY_CODE – GL_COMPANY_CODE
+        GL_COMPANY_DESC – GL_COMPANY_DESC
+        GL_TAX_ENTITY_CODE – GL_TAX_ENTITY_CODE
+        GL_TAX_ENTITY_DESC – GL_TAX_ENTITY_DESC
+        GL_OPERATION_CODE – GL_OPERATION_CODE
+        GL_OPERATION_DESC – GL_OPERATION_DESC
+        GL_MARKET_CODE – GL_MARKET_CODE
+        GL_MARKET_DESC – GL_MARKET_DESC
+        GL_COST_CENTER_CODE – GL_COST_CENTER_CODE
+        GL_COST_CENTER_DESC – GL_COST_CENTER_DESC
+        GL_NATURAL_ACCOUNT_CODE – GL_NATURAL_ACCOUNT_CODE
+        GL_NATURAL_ACCOUNT_DESC – GL_NATURAL_ACCOUNT_DESC
+        GL_PRODUCT_CODE – GL_PRODUCT_CODE
+        GL_PRODUCT_DESC – GL_PRODUCT_DESC
+        GL_ABC_CODE – GL_ABC_CODE
+        GL_ABC_DESC – GL_ABC_DESC
+        ACTUAL_FLAG – ACTUAL_FLAG
+    Ignored columns: (None)
+3. Select Data > Add data...
+    Source: Data table from current analysis
+    Data table: INVENTORY_TRANSACTIONS_WO_LOT
+    Update behavior: Automatic
+    Data loaded at: 1/11/2024 9:26 AM
+    Data was added as new columns in data table 'GL_TRIAL_BALANCE'
+    Matching behavior: Tries to match the specified columns when data is loaded
+    Matched columns: GL_OPERATION_CODE – GL Operation
+    Added columns:
+        115935 End Balance by GL Operation
+        115935 Reval by GL Operation
+        Middle Month Amount by GL Operation
+    Ignored columns:
+        ITEM_NUMBER
+        ITEM_NAME
+        LOCATION_CODE
+        SUBINVENTORY_CODE
+        STOCK_LOCATOR
+        REASON_CODE
+        REASON_DESCRIPTION
+        TRANSACTION_DATE
+        PRIMARY_QUANTITY
+        COMMENTS
+        DOCUMENT_NUMBER
+        TRANSACTION_CATEGORY
+        TRANSACTION_SUBCATEGORY
+        TRANSACTION_DESCRIPTION
+        TO_FROM_ORG
+        ACCOUNT_USER_NAME
+        TRANSFER_SUBINVENTORY
+        CREATION_DATE
+        Total Cost Period 1
+        BASE_CURRENCY_CODE
+        ACCOUNT_UNIT
+        ITEM_NAME (2)
+        Total Cost Period 2
+        BASE_CURRENCY_CODE (2)
+        UPDATED_REASON_CODE
+        115935 Impact from Transactions
+        Max Creation Date by Reason Code
+        Max IBAL
+        1st Day Max Creation Date
+        1st Day Max IBAL
+        Prior Month 115935 Quantity
+        Cost Difference
+        Estimated Reval from Prior Month
+        115935 Primary Quantity
+        115935 End Balance Amount Support
+        115935 End Balance Qty Support
+        Total Cost Period 2 with Null
+        Total Cost Period 1 with Null
+        Middle Month Qty
+        Middle Month Amount
+        Middle Month Amount by Location & Item
+    Join method: Left single match join
+    Treat empty values as equal: No
+4. Data > Add calculated column...
+    Column name: Unexplained Difference
+    Expression: [END_BALANCE] - [115935 End Balance by GL Operation]
+5. Data > Data table properties > Relations
+    Added relation: [GL_TRIAL_BALANCE].[GL_OPERATION_CODE] – [INVENTORY_TRANSACTIONS_WO_LOT].[GL Operation]
+    Added relation: [GL_TRIAL_BALANCE].[GL_OPERATION_CODE] – [JOURNAL_ENTRY].[GL_OPERATION_CODE]
+1. Information Link
+    Path: /Data Sources/Public Data Sources/Costs/COST_ITEM_LIST
+    Id: be10f905-a48c-4ded-8dd4-f7d320ec0ee9
+    On-demand settings
+        Procedure COST_ITEM_LIST, parameter COST_MONTH_START_DATE (yyyy-mm-dd) defined by
+            Document property: P2CostDate
+        Update behavior: Manual
+        Caching allowed: No
+    Data loaded at: 1/11/2024 9:22 AM
+1. Information Link
+    Path: /Data Sources/Public Data Sources/Finance/GL_TRIAL_BALANCE
+    Id: 5b1846ec-e0fa-4ec1-bcf5-3be1563292b9
+    On-demand settings
+        Procedure GL_TRIAL_BALANCE, parameter IN_PERIOD_NAME (MON-FY-YY) defined by
+            Document property: GLPeriod
+        Procedure GL_TRIAL_BALANCE, parameter IN_LEDGER_NAME (e.g. JMS- Domestic) defined by
+            Expression: "JMS- Canada"
+            Limited by active filtering scheme: No
+            Limited by: (None)
+        Update behavior: Manual
+        Caching allowed: No
+    Data loaded at: 1/11/2024 9:21 AM
+1. Information Link
+    Path: /3 Information Links/Enterprise Information Links/Finance/JOURNAL_ENTRY
+    Id: a3fce803-10f1-4fb2-a746-9563a3cec4ac
+    On-demand settings
+        Procedure JOURNAL_ENTRY, parameter IN_PERIOD_NAME (MON-FY-YY) defined by
+            Document property: GLPeriod
+        Update behavior: Manual
+        Caching allowed: No
+    Data loaded at: 1/11/2024 9:29 AM
+2. Data > Data table properties > Relations
+    Added relation: [GL_TRIAL_BALANCE].[GL_OPERATION_CODE] – [JOURNAL_ENTRY].[GL_OPERATION_CODE]
